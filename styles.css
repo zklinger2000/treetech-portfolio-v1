@@ -223,6 +223,10 @@ a.social:hover {
     max-width: 1200px;
     padding: 0 30px;
   }
+  
+  .main-nav {
+    font-size: 1.3em;
+  }
 
   .profile-image {
     float: left;
