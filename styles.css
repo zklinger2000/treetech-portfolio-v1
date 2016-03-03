@@ -29,6 +29,7 @@ a:hover {
   min-height: 30px;
   padding: 10px;
   position: fixed;
+  top: 0;
   text-align: center;
 }
 .nav {
@@ -52,7 +53,10 @@ a:hover {
   transition: all .5s;
 }
 .nav a:hover {
-  color: white
+  color: white;
+}
+.nav a.current {
+  color: #DDD;
 }
 
 header {
@@ -61,9 +65,8 @@ header {
   background-size: cover;
   overflow: hidden;
   padding-top: 60px;
-}
-header {
   line-height: 1.5;
+  max-height: 740px;
 }
 header .profile-image {
   float: left;
@@ -107,8 +110,24 @@ header .profile-image:hover {
   border-radius: 6px;
   transition: all .5s;
 }
-.card:hover {
-  border-color: #9999ff;
+
+.card.lg {
+  max-width: 800px;
+}
+.wrapper {
+  text-align: right;
+}
+.bunny {
+  border-radius: 25%;
+  width: 150px;
+  height: 150px;
+  margin: 20px;
+}
+.bunny-text {
+  position: relative;
+  bottom: 20px;
+  right: 40px;
+  font-style: italic;
 }
 
 ul.skills {
