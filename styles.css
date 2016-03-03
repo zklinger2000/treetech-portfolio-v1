@@ -57,7 +57,7 @@ a:hover {
 
 header {
   text-align: center;
-  background: url('images/portland.jpg') no-repeat top center ;
+  background: url('images/pancake_daytime_output_083.jpg') no-repeat top center ;
   background-size: cover;
   overflow: hidden;
   padding-top: 60px;
@@ -66,27 +66,36 @@ header {
   line-height: 1.5;
 }
 header .profile-image {
+  float: left;
+  margin-left: 10%;
   margin-top: 50px;
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
+  width: 300px;
+  height: 300px;
   border: 3px solid white;
   transition: all .5s;
 }
 header .profile-image:hover {
-  transform: scale(1.2) rotate(5deg);
+  transform: scale(1.2);
 }
 .tag {
-  background-color: #efefef;
-  color: black;
+  color: white;
+  float: left;
+  margin-left: 10%;
+  margin-top: 50px;
   padding: 10px;
   border-radius: 5px;
   display: table;
-  margin: 10px auto;
 } 
+.tag.name {
+  font-size: 2.75em;
+}
 .location {
+  float: right;
+  margin-top: 350px;
+  margin-right: 5%;
   background-color: #222;
   color: yellow;
+  font-size: 1.4em;
 }
 .card {
   margin: 30px;
@@ -99,7 +108,7 @@ header .profile-image:hover {
   transition: all .5s;
 }
 .card:hover {
-  border-color: #ff99ff;
+  border-color: #9999ff;
 }
 
 ul.skills {
@@ -110,15 +119,22 @@ ul.skills {
 .skills li {
   border-radius: 6px;
   display: inline-block;
-  background: #ff9904;
-  color: white;
   padding: 5px 10px;
   margin: 2px;
 }
 
-.skills li:nth-child(odd) {
-  background: #0399ff;
-}
+li.js {
+  background-color: #fe6;
+  color: #333;}
+li.nodejs {
+  background-color: #9c6;
+  color: #333;}
+li.mongodb {
+  background-color: #633;
+  color: #6c6;}
+li.angular {
+  background-color: #d00;
+  color: #fff;}
 
 footer {
   width: 100%;
@@ -150,9 +166,6 @@ a.social {
   background-size: 30px 30px;
   opacity: .4;
   transition: all .5s;
-}
-a.twitter {
-  background-image: url(images/twitter.svg);
 }
 a.linkedin {
   background-image: url(images/linkedin.svg);
